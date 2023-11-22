@@ -18,7 +18,7 @@ const authOptions = {
           },
         });
         if (!userFound) {
-          return null;
+          throw new Error("User not found");
         }
         console.log(userFound);
 
@@ -26,7 +26,7 @@ const authOptions = {
           credentials.password,
           userFound.password
         );
-        if (!matchPassword) return null;
+        if (!matchPassword) throw new Error("Wrong password");
 
         return {
           id: userFound.id,
