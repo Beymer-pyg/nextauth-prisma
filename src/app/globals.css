@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  outline: 0.1px solid orange;
+  /* outline: 0.1px solid orange; */
 }
 
 body {

@@ -24,6 +24,7 @@ function LoginPage() {
       setError(res.error);
     } else {
       router.push("/dashboard");
+      router.refresh();
     }
   });
 
